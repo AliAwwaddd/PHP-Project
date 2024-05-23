@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+nav {
+    z-index: 1;
+}
+
+.content-container {
+    z-index: 0;
+    flex: 1;
+    padding: 20px 0 0 0;
+    /* Adjust padding as needed */
+    background-color: #e0e0e0;
+    /* Set background color for the right half */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*Center the content horizontally */
+    align-items: center;
+    /*Center the content vertically */
+    height: 100vh;
+}
+
+.boxContent p {
+    text-align: center;
+    font-size: small;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.heading {
+    margin-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin: 20px;
+}
+
+.box input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    z-index: 20;
+}
+
+.boxContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.boxContent::before,
+.boxContent::after {
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+}
+
+.boxContent::before {
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.075);
+    z-index: -1;
+}
+
+.boxContent::after {
+    width: 115%;
+    height: 115%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.050);
+    z-index: -2;
+}
+
+.box input:checked~.boxContent::after {
+    background: linear-gradient(to right, #78051c, #78051c);
+}
+
+.box input:checked:disabled~.boxContent::after {
+    background: linear-gradient(to right, #000000, #000100);
+
+}
+
+/* Style for unchecked and disabled checkboxes */
+.box input[type="checkbox"]:not(:checked):disabled {
+    /* Your styling goes here */
+    background: linear-gradient(to right, #FFfFFF, #FFFFFF);
+    opacity: 0.7;
+    /* Example: reduce opacity for disabled and unchecked checkboxes */
+}
+
+
+.box input:checked~.boxContent i,
+.box input:checked~.boxContent p {
+    background: linear-gradient(to right, #78051c, #78051c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+/* Increase the font size for better readability */
+.content-container label {
+
+    font-size: 18px;
+}
+
+/* Add more space between elements */
+.content-container label {
+
+    margin-bottom: 10px;
+}
+
+/* Increase the font size of the header */
+.content-container h2 {
+
+    font-size: 24px;
+}
+
+/* Adjust the spacing for the total credits */
+#totalCredits {
+    font-size: 24px;
+    font-weight: bold;
+    /* Add bold for emphasis */
+    /* Adjust spacing as needed */
+}
+
+.tc {
+    margin-top: 40px;
+
+}
+
+.content-container input[type="submit"] {
+    font-size: 18px;
+    padding: 5px 14px;
+    /* Add padding for a larger button */
+    margin-left: 12px;
+    margin-top: 40px;
+    background-color: #4CAF50;
+    /* Green background color */
+    color: white;
+    /* White text color */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Add border-radius for rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Add transition for a smooth hover effect */
+}
+
+.content-container input[type="submit"]:hover {
+    background-color: #78051c;
+    /* Darker green color on hover */
+}
+
+
+/* Additional styles for other elements inside content-container */

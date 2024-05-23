@@ -1,0 +1,74 @@
+    .content-container {
+        flex: 1;
+        padding: 20px 0 0 0;
+        /* Adjust padding as needed */
+        background-color: #e0e0e0;
+        /* Set background color for the right half */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /*Center the content horizontally */
+        align-items: center;
+
+        /*Center the content vertically */
+
+
+
+    }
+
+
+    table {
+
+        border-collapse: collapse;
+        margin: 0 auto;
+        /* This will horizontally center the table within the div */
+        width: 70%;
+        margin-bottom: 50px;
+        /* Adjust the width as needed */
+    }
+
+    th,
+    td {
+        border: 1px solid #FFFFFF;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    .content-container input[type="submit"] {
+            /* margin-right: 700px; */
+            font-size: 18px;
+            padding: 3px 7px;
+            /* Add padding for a larger button */
+            margin-left: 12px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            /* Green background color */
+            color: white;
+            /* White text color */
+            border: none;
+            /* Remove border */
+            border-radius: 5px;
+            /* Add border-radius for rounded corners */
+            cursor: pointer;
+            transition: background-color 0.3s;
+            /* Add transition for a smooth hover effect */
+        }
+        
+        .content-container input[type="submit"]:hover {
+            background-color: #78051c;
+            /* Darker green color on hover */
+        }
+        
+        #formContainer {
+            margin-bottom: 100px;
+            display: flex;
+        }
+
+        /* Add some spacing between the forms */
+        .getMarksForm {
+            margin-right: 10px;
+        }

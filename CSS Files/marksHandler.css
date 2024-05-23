@@ -1,0 +1,74 @@
+/* Style for the container div */
+#content-container .welcome {
+    background-color: #3498db;
+    /* Set background color */
+    color: #fff;
+    /* Set text color */
+    padding: 10px;
+    /* Add some padding for better readability */
+    font-family: Arial, sans-serif;
+    /* Set font family */
+    font-size: 16px;
+    /* Set font size */
+    text-align: center;
+    /* Center-align text */
+    border-radius: 5px;
+    /* Add rounded corners */
+}
+
+#content-container {
+
+    /* max-width: 600px; */
+    /* margin: 50px auto; */
+    /* background-color: #e0e0e0; */
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    /* height: 70px; */
+    /* justify-content: center; */
+    /*Center the content horizontally */
+    /* align-items: center; */
+}
+
+.content-container {
+    flex: 1;
+    padding: 20px 0 0 0;
+    /* Adjust padding as needed */
+    background-color: #e0e0e0;
+    /* Set background color for the right half */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*Center the content horizontally */
+    align-items: center;
+
+    /*Center the content vertically */
+
+
+
+}
+
+
+table {
+
+    border-collapse: collapse;
+    margin: 0 auto;
+    /* This will horizontally center the table within the div */
+    width: 70%;
+    margin-bottom: 150px;
+    /* Adjust the width as needed */
+}
+
+th,
+td {
+    border: 1px solid #FFFFFF;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}

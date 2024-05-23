@@ -1,0 +1,23 @@
+.content-container input[type="submit"] {
+    font-size: 18px;
+    padding: 5px 14px;
+    /* Add padding for a larger button */
+    margin-left: 12px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    /* Green background color */
+    color: white;
+    /* White text color */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Add border-radius for rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Add transition for a smooth hover effect */
+}
+
+.content-container input[type="submit"]:hover {
+    background-color: #78051c;
+    /* Darker green color on hover */
+}

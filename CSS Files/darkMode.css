@@ -1,0 +1,86 @@
+#dark-mode-toggle {
+    position: relative;
+    display: none; /* Hide the default checkbox */
+}
+
+#dark-mode-toggle + label {
+    position: relative;
+    cursor: pointer;
+    background-color: #ffffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    margin-top: 50px; /* Adjusted margin-top to 100px */
+}
+
+#dark-mode-toggle:checked + label {
+    background-color: #4CAF50;
+}
+
+#dark-mode-toggle + label::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #2d2d2d;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+#dark-mode-toggle:checked + label::before {
+    transform: translateX(30px);
+}
+/* ////////////////////////////////////////////////////////////////////// */
+
+
+:root {
+        --background-color: #ffffff;
+        --text-color: #000000;
+    }
+
+    body {
+        background-color: var(--background-color);
+        color: var(--text-color);
+        transition: background-color 0.5s, color 0.5s;
+    }
+
+    /* Dark Mode Styles */
+    body.dark-mode {
+        --background-color: #2d2d2d;
+        --text-color: #ffffff;
+    }
+
+
+    
+
+body.dark-mode #content-container {
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+body.dark-mode #content-container li {
+    border-bottom: 1px solid #555;
+}
+
+body.dark-mode #content-container input[type="submit"] {
+    background-color: #78051c;
+    color: white;
+}
+
+body.dark-mode #content-container input[type="submit"]:hover {
+    background-color: #4CAF50;
+}
+
+body.dark-mode #content-container h2 {
+    color: white;
+}
+
+
+
+/* ########################################################dark mode ########################################################### */
